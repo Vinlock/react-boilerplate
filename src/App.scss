@@ -1,0 +1,27 @@
+#cl-content {
+  margin-top: 120px;
+}
+
+a.no-hover {
+  &:focus, &:hover {
+    text-decoration: none;
+  }
+}
+
+/* Buttons */
+.btnCl {
+  background-color: $crypto-red;
+  color: #fff;
+  &:hover {
+    background-color: $crypto-hover-red;
+  }
+  &.short {
+    max-width: 325px;
+    margin: 0 auto;
+  }
+}
+
+.btnSkype {
+  background-color: $skype;
+  color: #fff;
+}
