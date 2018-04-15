@@ -12,5 +12,7 @@ import registerServiceWorker from './registerServiceWorker';
 // ReactGA.initialize(process.env.REACT_APP_GA);
 // ReactGA.pageview(window.location.pathname + window.location.search);
 
+
+
 ReactDOM.render(<AppProvider />, document.getElementById('root'));
 registerServiceWorker();

@@ -66,22 +66,20 @@ class AppProvider extends Component {
 
   render() {
     return (
-      <ErrorBoundary>
-        <Provider store={store}>
-          <ConnectedRouter history={history}>
-            <Renderer render={() => (
-              <PersistGate
-                loading={loading}
-                onBeforeLift={this.onBeforeLift}
-                persistor={persistor}
-              >
-                <App />
-              </PersistGate>
-            )}
-            />
-          </ConnectedRouter>
-        </Provider>
-      </ErrorBoundary>
+      <Provider store={store}>
+        <ConnectedRouter history={history}>
+          <Renderer render={() => (
+            <PersistGate
+              loading={loading}
+              onBeforeLift={this.onBeforeLift}
+              persistor={persistor}
+            >
+              <App />
+            </PersistGate>
+          )}
+          />
+        </ConnectedRouter>
+      </Provider>
     );
   }
 }
